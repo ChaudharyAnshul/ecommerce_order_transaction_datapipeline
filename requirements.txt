@@ -2,3 +2,10 @@ faker==35.0.0
 mysql-connector-python==9.2.0
 SQLAlchemy==2.0.37
 python-dotenv==1.0.1
+uvicorn==0.34.0
+PyJWT==2.10.1
+pydantic==2.10.6
+ipython==8.31.0
+fastapi==0.115.7
+bcrypt==4.2.1
+passlib==1.7.4
