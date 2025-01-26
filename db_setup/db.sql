@@ -94,6 +94,7 @@ CREATE TABLE ecommerce_db.order (
     FOREIGN KEY (customer_id) REFERENCES ecommerce_db.user(user_id) ON DELETE CASCADE
 );
 select * from ecommerce_db.order;
+ALTER TABLE ecommerce_db.order DROP COLUMN is_returned;
 
 -- create order_item table
 CREATE TABLE ecommerce_db.order_item (
@@ -107,6 +108,7 @@ CREATE TABLE ecommerce_db.order_item (
     FOREIGN KEY (product_id) REFERENCES ecommerce_db.product(product_id) ON DELETE CASCADE
 );
 select * from ecommerce_db.order_item;
+ALTER TABLE ecommerce_db.order_item ADD COLUMN is_returned BOOLEAN DEFAULT FALSE;
 
 -- create return_reasons tabe
 CREATE TABLE ecommerce_db.return_reason (
