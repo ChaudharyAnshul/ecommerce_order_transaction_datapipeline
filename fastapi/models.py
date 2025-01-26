@@ -53,7 +53,7 @@ class ReturnReasonSchema(BaseModel):
   reason_description: str
 
 class LoginSchema(BaseModel):
-  email: str
+  username: str
   password: str
 
 class SignupSchema(BaseModel):
@@ -79,13 +79,13 @@ class OrderRequest(BaseModel):
   payment: OrderRequestPayment
 
 class ReturnRequest(BaseModel):
-    order_item_id: int
-    return_request_date: str
-    return_reason: int
-    return_reason_detailed: str
-    return_type: str
-    refund_method: str
-    product_condition: str
-    return_status: str
-    initiated_by: str
-    processed_date: str
+  order_item_id: int
+  return_request_date: str
+  return_reason: int
+  return_reason_detailed: str
+  return_type: str
+  refund_method: str
+  product_condition: str
+  return_status: str
+  initiated_by: str
+  processed_date: str
