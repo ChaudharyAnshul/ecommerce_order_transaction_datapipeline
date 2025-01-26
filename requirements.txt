@@ -10,3 +10,5 @@ fastapi==0.115.7
 bcrypt==4.2.1
 passlib==1.7.4
 python-multipart==0.0.20
+streamlit==1.41.1
+streamlit_option_menu==0.4.0
