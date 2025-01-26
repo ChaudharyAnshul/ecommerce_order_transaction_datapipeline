@@ -36,6 +36,7 @@ CREATE TABLE ecommerce_db.user (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 select * from ecommerce_db.user;
+ALTER TABLE ecommerce_db.user MODIFY phone_number VARCHAR(25);
 
 -- create adderess table
 CREATE TABLE ecommerce_db.user_address (
