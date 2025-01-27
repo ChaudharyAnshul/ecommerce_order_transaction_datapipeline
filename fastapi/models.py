@@ -67,7 +67,7 @@ class OrderRequestItem(BaseModel):
   quantity: int
 
 class OrderRequestPayment(BaseModel):
-  payment_method: int
+  payment_method: str
   amount: float
   transaction_date: str
 
@@ -75,7 +75,7 @@ class OrderRequest(BaseModel):
   user_id: int
   order_date: str
   total_amount: float
-  items: list[OrderRequestItem]  # Example: [{"product_id": 1, "quantity": 2}]
+  items: list[OrderRequestItem]
   payment: OrderRequestPayment
 
 class ReturnRequest(BaseModel):

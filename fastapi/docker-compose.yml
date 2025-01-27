@@ -7,3 +7,4 @@ services:
       - 8010:8010
     volumes:
       - .:/app
+    network_mode: host
