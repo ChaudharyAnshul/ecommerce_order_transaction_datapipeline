@@ -30,3 +30,10 @@ class APIClient:
       response = await client.get(url)
       response.raise_for_status()
       return response.json()
+
+  async def get_returnable_order(self):
+    url = f"{self.base_url}/orders/returnable_order_orders"
+    async with httpx.AsyncClient() as client:
+      response = await client.get(url)
+      response.raise_for_status()
+      return response.json()
