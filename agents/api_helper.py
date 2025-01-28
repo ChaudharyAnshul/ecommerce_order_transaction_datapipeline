@@ -23,3 +23,10 @@ class APIClient:
       response = await client.get(url)
       response.raise_for_status()
       return response.json()
+
+  async def get_orders_by_user(self, user_id):
+    url = f"{self.base_url}/orders/users/{user_id}/orders"
+    async with httpx.AsyncClient() as client:
+      response = await client.get(url)
+      response.raise_for_status()
+      return response.json()

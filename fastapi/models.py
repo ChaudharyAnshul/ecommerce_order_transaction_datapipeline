@@ -69,11 +69,9 @@ class OrderRequestItem(BaseModel):
 class OrderRequestPayment(BaseModel):
   payment_method: str
   amount: float
-  transaction_date: str
 
 class OrderRequest(BaseModel):
   user_id: int
-  order_date: str
   total_amount: float
   items: list[OrderRequestItem]
   payment: OrderRequestPayment
